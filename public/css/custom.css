@@ -1,0 +1,54 @@
+
+.demo-card-image.mdl-card {
+  width: auto;
+  height: 256px;
+  background: url('/public/img/profpic.jpg') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.clear-text {
+    color: white !important;
+}
+
+
+
+.demo-card-wide.mdl-card {
+  width: 70%;
+    top: 20%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #000;
+  height: 20%;
+}
+.demo-card-wide > .mdl-card__main-text {
+  color: #000;
+  height: 40%;
+  margin:20px;
+}
+.demo-card-wide > .mdl-card__supporting-text {
+  color: #000;
+  height: 40%;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+mdl-navigation{
+  color:#000 !important;
+}

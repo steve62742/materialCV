@@ -1,0 +1,107 @@
+<!doctype html>
+<html ng-app="MyCV">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="public/css/material-design-color-palette.css">
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+
+    <link rel="stylesheet" href="public/css/custom.css">
+
+<style>
+</style>
+
+
+  </head>
+
+
+  <body ng-controller="MasterCtrl">
+
+
+
+
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+
+
+      <div class="mdl-layout__drawer " ng-class="colorClass()">
+
+        <div class="demo-card-image mdl-card mdl-shadow--2dp ">
+        </div>
+
+        <span class="mdl-layout-title" style="color:black;font-style: italic;">Stefanos Vardalos</span>
+        <nav class="mdl-navigation ">
+          <a class="mdl-navigation__link mdc-bg-blue-800 clear-text" ng-click="changeState(0)"  ui-sref="home">
+            <span style="width:20%;"><i class="fa fa-user" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;">Personal Info</span>
+          </a>
+          <a class="mdl-navigation__link mdc-bg-teal-800 clear-text " ng-click="changeState(1)" ui-sref="education">
+            <span style="width:20%;"><i class="fa fa-university" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;" >Education</span>
+          </a>
+          <a class="mdl-navigation__link mdc-bg-deep-purple-400 clear-text" ng-click="changeState(2)"  ui-sref="experience">
+            <span style="width:20%;"><i class="fa fa-briefcase" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;">Experience</span>
+          </a>
+          <a class="mdl-navigation__link mdc-bg-pink-500 clear-text" ng-click="changeState(3)" ui-sref="projects">
+            <span style="width:20%;"><i class="fa fa-tasks" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;">Projects</span>
+          </a>
+          <a class="mdl-navigation__link mdc-bg-orange-600 clear-text" ng-click="changeState(4)" ui-sref="skills">
+            <span style="width:20%;"><i class="fa fa-terminal" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;">Skills</span>
+          </a>
+          <a class="mdl-navigation__link mdc-bg-red-500 clear-text" ng-click="changeState(5)" ui-sref="contact">
+            <span style="width:20%;"><i class="fa fa-comment-o" style="padding-right:44dp" aria-hidden="true"></i></span>
+            <span style="width:80%;float:right;">Contact</span>
+          </a>
+        </nav>
+      </div>
+
+
+      <main class="mdl-layout__content"  style="height:100%;"  ng-class="colorClass()" >
+
+
+        <div ui-view class="page-content" style="height:100%;position: absolute;"  >
+
+        </div>
+
+
+      </main>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+<script src="bower_components/angular/angular.js"></script>
+
+<script src="bower_components/material-design-lite/material.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+
+
+<script src="bower_components/chart.js/dist/Chart.js"></script>
+<script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+
+<script src="app.js"></script>
+<script src="controllers/master-ctrl.js"></script>
+
+
+
+  </body>
+</html>

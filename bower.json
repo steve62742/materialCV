@@ -1,0 +1,17 @@
+{
+  "name": "MyCV",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": null,
+    "angular-animate": null,
+    "angular-messages": null,
+    "angular-route": null,
+    "angular-ui-router": null,
+    "angular-chart.js": null,
+    "font-awesome": null,
+    "material-design-lite": null ,
+    "chart.js": null
+  },
+  "devDependencies": {
+  }
+}
