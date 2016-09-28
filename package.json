@@ -1,0 +1,10 @@
+{
+  "name": "materialcv",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "*"
+  }
+}
