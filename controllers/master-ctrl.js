@@ -65,12 +65,6 @@ function MasterCtrl($scope , $state) {
     }
 
 
-
-    $scope.test = function(){
-        return "tasdasd";
-    }
-
-
     window.onresize = function() {
         $scope.$apply();
     };
